@@ -1,0 +1,62 @@
+html{
+  font-family: Courier, monospace;
+}
+
+hr{
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+}
+
+button{
+  font-family: Courier, monospace;
+  border-radius: 0px;
+  font-weight: bold;
+}
+
+.sec-ttl{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.todo-item{
+  font-size: 16px;
+  width: 500px;
+  border-bottom: 1px solid black;
+}
+
+.todo-text{
+  font-size: 16px;
+  text-align: left;
+  flex-flow: row wrap;
+  overflow-wrap: break-word;
+  background: none;
+  border: none;
+}
+
+.ttl{
+  font-size: 20px;
+  width: 85%;
+  font-weight: bold;
+}
+.ttl:hover{
+  text-decoration: underline;
+}
+
+.ina{
+  color: lightgray;
+}
+
+.dtl{
+  margin-left: 15%;
+  width: 50%;
+}
+
+.edt{
+  font-size: 10px;
+  color: blue;
+  margin-right: 0%;
+}
+.edt:hover{
+  text-decoration: underline;
+}

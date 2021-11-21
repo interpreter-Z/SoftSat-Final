@@ -1,0 +1,32 @@
+{
+  "1637465828124" : {
+    "active" : true,
+    "detail" : "click \"edit\" to edit todo",
+    "title" : "click text to toggle detail"
+  },
+  "1637466213132" : {
+    "active" : false,
+    "detail" : "*at least get it functional blyat",
+    "title" : "finish final project"
+  },
+  "1637466251188" : {
+    "active" : true,
+    "detail" : "It will be great if we can recieve some feedback; I don't think my code structure is efficient enough",
+    "title" : "check submitted final projects"
+  },
+  "1637466429838" : {
+    "active" : true,
+    "detail" : "",
+    "title" : "<== finish/restore  ||  remove ==>"
+  },
+  "1637466713293" : {
+    "active" : true,
+    "detail" : "000355046000",
+    "title" : "investigate (or not)"
+  },
+  "1637466885749" : {
+    "active" : false,
+    "detail" : "zzz",
+    "title" : "get some sleep"
+  }
+}

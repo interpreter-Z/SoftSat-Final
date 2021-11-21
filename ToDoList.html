@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>to do list</title>
+    <link rel="stylesheet" href="ToDoList.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <h1>To Do List App - Beginner</h1>
+    <h3>A VueJS app built for <a href="https://purdueieee.org/software/">Software Saturdays</a> Fall2021.</h3>
+    <hr/>
+    <div id="todo-app">
+      <div class="sec-ttl">Add ToDo</div> <br/>
+      Title : <input v-model="iptTtl"> <br/>
+      Detail: <input v-model="iptDtl"> <br/>
+      <button v-on:click="addToDo(''+Date.now(),iptTtl,iptDtl,true)">Add ToDo</button>
+      <br/><br/><hr/>
+
+      <div class="sec-ttl">Active ToDo</div> <br/>
+      <todo-item v-for="todo in todolist" v-bind:key="todo.tsp" v-bind:tsp="todo.tsp" v-bind:title="todo.title" v-bind:detail="todo.detail" v-bind:active="todo.active" v-bind:dispdtl="todo.dispdtl" v-bind:isedit="todo.isedit"
+      v-on:activate="hdl_activate" v-on:deactivate="hdl_deactivate" v-on:tggdtl="hdl_tggdtl" v-on:remove="hdl_remove" v-on:tggedit="hdl_tggedit" v-on:edtttl="hdl_edtttl" v-on:edtdtl="hdl_edtdtl"
+      ></todo-item>
+      <br/><hr/>
+
+      <div class="sec-ttl">Finished ToDo</div> <br/>
+      <todo-item v-for="todo in todofnsh" v-bind:key="todo.tsp" v-bind:tsp="todo.tsp" v-bind:title="todo.title" v-bind:detail="todo.detail" v-bind:active="todo.active" v-bind:dispdtl="todo.dispdtl" v-bind:isedit="todo.isedit"
+      v-on:activate="hdl_activate" v-on:deactivate="hdl_deactivate" v-on:tggdtl="hdl_tggdtl" v-on:remove="hdl_remove" v-on:tggedit="hdl_tggedit" v-on:edtttl="hdl_edtttl" v-on:edtdtl="hdl_edtdtl"
+      ></todo-item>
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+    <script src="ToDoList2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC4z6PxCKNjApGYSFM5wbo6e0aiHuuM3ZM",
+    authDomain: "ssfp-todolist.firebaseapp.com",
+    databaseURL: "https://ssfp-todolist-default-rtdb.firebaseio.com",
+    projectId: "ssfp-todolist",
+    storageBucket: "ssfp-todolist.appspot.com",
+    messagingSenderId: "684797675310",
+    appId: "1:684797675310:web:cb8bfbdae473f6e2e6dcbf"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
